@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Admin Portal</title>
+</head>
+<body>
+        <form method="POST" style="width: 600px;margin: 200px auto;">
+
+        <h3 style="font-size: 25px;">Admin</h3>
+
+        <div style="width: 100%;margin: 15px auto;">
+
+            <label for="UserName" style="display: block; padding: 20px; font-size: 25px;">Username</label>
+            <input name="UserName" type="text" placeholder="UserName" style="width: 96%; padding: 10px;
+            border: 1px solid #797979; font-size: 20px;  margin-left: 20px; border-radius: 3px;">
+
+            <span style="display: block; margin-left: 20px; color: red; font-style: italic;"></span>
+
+        </div>
+
+        <div style="width: 100%;margin: 15px auto;">
+
+            <label for="Password" style="display: block; padding: 20px; font-size: 25px;">Password</label>
+            <input name="Password" type="text" placeholder="Password" style="width: 96%; padding: 10px;
+            border: 1px solid #797979; font-size: 20px;  margin-left: 20px; border-radius: 3px;">
+
+            <span style="display: block; margin-left: 20px; color: red; font-style: italic;"></span>
+
+        </div>
+
+
+        <button click="myfunc()" style="margin: 20px; padding: 10px; width: 100px; font-weight: bold; 
+        background: linear-gradient(90deg, royalblue, lightgreen);">SUBMIT</button>
+                <script>
+                    let btnsubmit = document.querySelector('button')
+                    btnsubmit.addEventListener('click',()=>{
+                        window.open("http://localhost:3030/UserPortal",'_blank')
+                    });
+                </script>
+            </table>
+        </form>
+</body>
+</html>
+
