@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Admin Portal</title>
+</head>
+<body>
+        <form method="POST" style="width: 600px;margin: 200px auto;">
+
+        <h3 style="font-size: 25px;">Customer Details</h3>
+
+        <div style="width: 100%;margin: 15px auto;">
+
+            <label for="UserName" style="display: block; padding: 15px; font-size: 20px;">Name</label>
+            <input name="UserName" type="text" placeholder="Name" style="width: 91%; padding: 5px;
+            border: 0.5px solid #797979; font-size: 15px;  margin-left: 15px; border-radius: 1px;">
+        </div>
+        <div style="width: 100%;margin: 15px auto;">
+
+            <label for="Phone_Number" style="display: block; padding: 15px; font-size: 20px;">Phone Number</label>
+            <input name="Phone_Number" type="text" placeholder="Phone_Number" style="width: 91%; padding: 5px;
+            border: 0.5px solid #797979; font-size: 15px;  margin-left: 15px; border-radius: 1px;">
+        </div>
+        <div style="width: 100%;margin: 15px auto;">
+
+            <label for="Address" style="display: block; padding: 15px; font-size: 20px;">Address</label>
+            <input name="Address" type="text" placeholder="Address" style="width: 91%; padding: 5px;
+            border: 0.5px solid #797979; font-size: 15px;  margin-left: 15px; border-radius: 1px;">
+        </div>
+
+
+        <button click="myfunc()" style="margin: 20px; padding: 10px; width: 100px; font-weight: bold; 
+        background: linear-gradient(90deg, royalblue, lightgreen);"> Next </button>
+                <script>
+                    let btnsubmit = document.querySelector('button')
+                    btnsubmit.addEventListener('click',()=>{
+                        window.open("http://localhost:3030/Management",'_blank')
+                    });
+                </script>
+            </table>
+        </form>
+</body>
+</html>
+
